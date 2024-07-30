@@ -1,31 +1,28 @@
 function makeUppercase(value) {
-  console.log(value.toUpperCase())
+  console.log(value.toUpperCase());
 }
-// makeUppercase('peter')
-
-function reverseString(value) {
-  console.log(value.split('').reverse().join(''))
-}
+// makeUppercase("peter");
 
 function handleName(name, cb) {
-  const fullName = `${name} smith`
-  console.log(fullName)
-  cb(fullName)
+  const fullName = `${name} smith`;
+  cb(fullName);
 }
 
-// handleName('peter', makeUppercase)
-// handleName('peter', reverseString)
-
-const btn = document.querySelector('.btn')
-
-// btn.addEventListener('click', function () {
-//   console.log('hello world')
-// })
-
-btn.addEventListener('click', sayHello)
-
-function sayHello() {
-  console.log('hello people')
+function reverseString(value) {
+  console.log(value.split("").reverse().join(""));
 }
 
-// array methods, setTimeout etc
+handleName("Dina", makeUppercase);
+handleName("Dina", reverseString);
+
+handleName("susan", function (value) {
+  console.log(value);
+});
+
+const btn = document.querySelector(".btn");
+
+btn.addEventListener("click", function () {
+  console.log("hello world");
+});
+
+// // array methods, setTimeout etc

@@ -1,24 +1,24 @@
-// MAP Method
+// MAP Method .
 const people = [
   {
-    name: 'bob',
+    name: "bob",
     age: 20,
-    position: 'developer',
+    position: "developer",
   },
   {
-    name: 'anna',
+    name: "anna",
     age: 25,
-    position: 'designer',
+    position: "designer",
   },
   {
-    name: 'susy',
+    name: "susy",
     age: 30,
-    position: 'the boss',
+    position: "the boss",
   },
   {
-    name: 'john',
+    name: "john",
     age: 26,
-    position: 'intern',
+    position: "intern",
   },
 ];
 // Quokka.js - Extension
@@ -40,6 +40,6 @@ const newPeople = people.map((item) => {
 console.log(newPeople);
 
 const names = people.map((person) => `<h2>${person.name}</h2>`);
-const result = document.querySelector('#result');
+const result = document.querySelector("#result");
 
-result.innerHTML = names.join('');
+result.innerHTML = names.join("");

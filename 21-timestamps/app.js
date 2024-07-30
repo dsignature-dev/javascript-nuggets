@@ -1,4 +1,4 @@
-//  Javascript Nuggets
+//  Javascript Nuggets.
 //  Timestamps
 console.log(new Date());
 
@@ -19,10 +19,10 @@ setTimeout(() => {
 
 // create id's in learning apps
 let people = [];
-people = [...people, { id: Date.now(), name: 'peter' }];
+people = [...people, { id: Date.now(), name: "peter" }];
 
 setTimeout(() => {
-  people = [...people, { id: Date.now(), name: 'john' }];
+  people = [...people, { id: Date.now(), name: "john" }];
   console.log(people);
 }, 1000);
 
@@ -50,3 +50,5 @@ console.log(minutes);
 
 const hours = timeDifference / (1000 * 60 * 60);
 console.log(hours);
+
+console.log(new Date());
